@@ -1,0 +1,5 @@
+WinHue 3 beta 24 regularly crashes. I get messages "Bridge not responding". 
+Although the IP adresse showing for the bridge is correct, it is impossible to pair it.
+I have tried several times to reinstall WinHue, without success. Bridge responds OK I use RESTful interface.
+The only solution is to reset the bridge to its factory settings.
+Please help!
