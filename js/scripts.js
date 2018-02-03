@@ -33,6 +33,12 @@ function convertToMB(){
   element1.innerHTML = "Size: ".concat(numberString," MB");
 }
 
+function thanks() {
+  setTimeout(function () {
+      document.location.pathname = "download";
+  }, 1000);
+}
+
 function datalol(reponse)
 {
   alert(response)

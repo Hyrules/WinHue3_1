@@ -27,8 +27,6 @@
       <div class="container" id="jumboContent">
           <h1 class="display-3" id="title">Thank You</h1>
           <p>Thank you for downloading WinHue!</p>
-          <button class="btn btn-light btn-lg btn-btm-pad header-btn" data-toggle="modal" data-target="#changelogModal" role="button">View Changelog</button>
-          <a class="btn btn-outline-light btn-lg rightmost btn-btm-pad header-btn" href="{{ site.github.repository_url }}" role="button">View on GitHub</a>
       </div>
     </div>
     <!-- Main Content -->
@@ -36,11 +34,24 @@
       <div class="row row-btm-pad">
         <div class="col-md-6">
           <h2>Support</h2>
-          <p>If you have any questions, or discover a bug, please visit our <a href="{{ site.github.issues_url }}">issues forum</a> and we'll help you sort it out.</p>
+          <p>If you have any questions, please visit our <a href="{{ site.github.issues_url }}">issues forum</a> and we'll help you sort it out.</p>
+          <p>If you discover a bug, please include the log file when reporting it. This will help us to define the nature of the error quickly.</p>
         </div>
         <div class="col-md-6">
-          <h2>Not Downloading?</h2>
-          <p><a data-auto-download href="{{ site.github.releases[0].assets[0].browser_download_url }}">Click here</a> to try again. This often occurs if JavaScript is disabled in your browser.</p>
+          <h2>Donate</h2>
+              <p>If you like WinHue 3, please consider donating. I will always offer WinHue for free and donations keep me encouraged to continue its developement. Thanks!</p>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                ">
+                <input class="btn btn-primary btn-btm-pad" type="submit" value="Donate $5" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              </form>
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                ">
+                <input class="btn btn-secondary" type="submit" value="Donate Any Amount" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              </form>
         </div>
       </div>
       <div class="row row-btm-pad">
@@ -54,29 +65,6 @@
         </div>
     </footer>
 
-    <!--Changelog Modal-->
-<div class="modal fade" id="changelogModal" tabindex="-1" role="dialog" aria-labelledby="changelogModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="changelogModalLabel">Changelog for {{ site.github.releases[0].name }}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>{{ site.github.releases[0].body }}</p>
-        <hr>
-        <p class="text-muted" id="size-text">Size: {{ site.github.releases[0].assets[0].size }}</p>
-        <p class="text-muted">Downloads: {{ site.github.releases[0].assets[0].download_count }}</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then other JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -84,15 +72,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="./assets/magnific-popup/magnific-popup.js"></script>
     <script src="./js/scripts.js"></script>
-    <script>
-    $(function() {
-      $('a[data-auto-download]').each(function(){
-        var $this = $(this);
-        setTimeout(function() {
-          window.location = $this.attr('href');
-        }, 2000);
-      });
-    });
-    </script>
   </body>
 </html>
