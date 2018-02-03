@@ -1,0 +1,21 @@
+#gradient-header{
+    background: linear-gradient(270deg, rgb(0, 212, 0), #004400);
+    background-size: 400% 400%;
+    
+    -webkit-animation: AnimationName 4s ease forwards;
+    -moz-animation: AnimationName 4s ease forwards;
+    animation: AnimationName 4s ease forwards;
+   }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+}
