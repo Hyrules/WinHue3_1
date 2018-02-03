@@ -35,7 +35,7 @@ function convertToMB(){
 
 function thanks() {
   setTimeout(function () {
-      document.location.pathname = "download.html";
+      document.location.pathname = "WinHue3/download.html";
   }, 5000);
 }
 
