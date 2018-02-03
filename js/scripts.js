@@ -35,7 +35,7 @@ function convertToMB(){
 
 function thanks() {
   setTimeout(function () {
-      document.location.pathname = "download";
+      document.location.pathname = "download.html";
   }, 1000);
 }
 
