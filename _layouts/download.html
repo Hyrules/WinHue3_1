@@ -41,7 +41,7 @@
         </div>
         <div class="col-md-6">
           <h2>Not Downloading?</h2>
-          <p><a href="{{ site.github.releases[0].assets[0].browser_download_url }}">Click here</a> to try again. This often occurs if JavaScript is disabled in your browser.</p>
+          <p><a data-auto-download href="{{ site.github.releases[0].assets[0].browser_download_url }}">Click here</a> to try again. This often occurs if JavaScript is disabled in your browser.</p>
         </div>
       </div>
         
@@ -63,5 +63,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
     <script src="./assets/magnific-popup/magnific-popup.js"></script>
     <script src="./js/scripts.js"></script>
+    <script>
+    $(function() {
+      $('a[data-auto-download]').each(function(){
+        var $this = $(this);
+        setTimeout(function() {
+          window.location = $this.attr('href');
+        }, 2000);
+      });
+    });
+    </script>
   </body>
 </html>
