@@ -6,8 +6,6 @@
     -webkit-animation: AnimationName 180s linear infinite;
     -moz-animation: AnimationName 180s linear infinite;
     animation: AnimationName 180s linear infinite;
-
-    text-align: center;
 }
 
 /*Header Colour Animation*/

@@ -7,6 +7,10 @@ body{
     font-family: 'Titillium Web', sans-serif;
 }
 
+#gradient-header {
+    text-align: center;
+}
+
 .modal p,h5{
     color:#000000
 }
