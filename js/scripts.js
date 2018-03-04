@@ -47,8 +47,10 @@ function thanks() {
 function formatChangelog() {
   var element2 = document.getElementById("latestChanges")
   var log = "";
-  $.get('latestChanges.txt', function(data) {
+  $.get('./latestChanges.txt', function(data) {
+    alert(data);
     log = data.replace(/\\r\\n/g, "<br />");
+    alert(log);
     element2.innerHTML = log;
   }, 'text');
   
