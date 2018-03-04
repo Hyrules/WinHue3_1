@@ -207,8 +207,9 @@
     <script src="./js/scripts.js"></script>
     <script>
       $(document).ready(function() {
+        var $j = jQuery.noConflict();
         var log = "";
-        $.get('latestChanges.txt', function(data) {
+        $j.get('latestChanges.txt', function(data) {
           log = data;
           alert(log);
         }, 'text');
