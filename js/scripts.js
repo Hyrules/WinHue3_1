@@ -37,7 +37,7 @@ function convertToMB(){
 function formatChangelog() {
   var element2 = document.getElementById("latestChanges")
   var log = "";
-  $.get('./latestChanges.txt', function(data) {
+  $.get('./assets/latestChanges.txt', function(data) {
     log = data.replace(/(?:\r\n|\r|\n)/g, '<br />');
     element2.innerHTML = log;
   }, 'text');
