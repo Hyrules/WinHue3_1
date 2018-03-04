@@ -24,7 +24,7 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
   convertToMB();
-  
+  formatChangelog();
 });
 
 function convertToMB(){
@@ -42,6 +42,16 @@ function thanks() {
   setTimeout(function () {
       document.location.pathname = "WinHue3/download.html";
   }, 5000);
+}
+
+function formatChangelog() {
+  var element2 = document.getElementById("latestChanges")
+  var log = "";
+  $.get('latestChanges.txt', function(data) {
+    log = data;
+    element2.innerHTML = log;
+  }, 'text');
+  
 }
 
 function datalol(reponse)
