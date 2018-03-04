@@ -49,7 +49,7 @@ function formatChangelog() {
   var log = "";
   $.get('./latestChanges.txt', function(data) {
     alert(data);
-    log = data.replace(/\\r\\n/g, "<br />");
+    log = data.replace(/(?:\r\n|\r|\n)/g, '<br />');
     alert(log);
     element2.innerHTML = log;
   }, 'text');
@@ -60,5 +60,3 @@ function datalol(reponse)
 {
   alert(response)
 }
-
-//
