@@ -24,8 +24,9 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
   convertToMB();
-  var log = `{{ site.github.releases[0].body }}`;
-  log.replace(/\\r\\n/g, "<br />");
+  $.get('file_to_read.txt', function(data) {
+   var log = data;
+  }, 'text');
   alert(log);
 });
 
