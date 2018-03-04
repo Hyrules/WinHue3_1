@@ -163,7 +163,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <p>{{ site.github.releases[0].body }}</p>
+          <p id="latestChanges">{{ site.github.releases[0].body }}</p>
           <hr>
           <p class="text-muted" id="size-text">Size: {{ site.github.releases[0].assets[0].size }}</p>
           <p class="text-muted">Downloads: {{ site.github.releases[0].assets[0].download_count }}</p>
