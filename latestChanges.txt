@@ -1,0 +1,3 @@
+---
+---
+{{ site.github.releases[0].body }}
