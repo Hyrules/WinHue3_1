@@ -1,4 +1,5 @@
 ---
+#Blank YAML frontmatter to get jekyll to process file and replace site variables
 ---
 
 $(function () {
@@ -48,3 +49,5 @@ function datalol(reponse)
 }
 
 //{{ site.github.owner_name }}
+
+//{{ site.github.releases[0].body }}
