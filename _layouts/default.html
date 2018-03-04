@@ -208,7 +208,7 @@
     <script>
       $(document).ready(function() {
         var log = "";
-        $j.get('latestChanges.txt', function(data) {
+        $.get('latestChanges.txt', function(data) {
           log = data;
           alert(log);
         }, 'text');
