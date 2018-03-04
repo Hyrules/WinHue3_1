@@ -48,6 +48,4 @@ function datalol(reponse)
   alert(response)
 }
 
-//{{ site.github.owner_name }}
-
 //{{ site.github.releases[0].body }}
