@@ -206,10 +206,13 @@
     <script src="./assets/magnific-popup/magnific-popup.js"></script>
     <script src="./js/scripts.js"></script>
     <script>
-      $.get('latestChanges.txt', function(data) {
-        var log = data;
-      }, 'text');
-      alert(log);
+      $(document).ready(function() {
+        var log = "";
+        $.get('latestChanges.txt', function(data) {
+          log = data;
+          alert(log);
+        }, 'text');
+      }
     </script>
   </body>
 </html>
