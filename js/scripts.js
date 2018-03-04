@@ -1,7 +1,3 @@
----
-#Blank YAML frontmatter to get jekyll to process file and replace site variables
----
-
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -38,25 +34,17 @@ function convertToMB(){
   element1.innerHTML = "Size: ".concat(numberString," MB");
 }
 
-function thanks() {
-  setTimeout(function () {
-      document.location.pathname = "WinHue3/download.html";
-  }, 5000);
-}
-
 function formatChangelog() {
   var element2 = document.getElementById("latestChanges")
   var log = "";
   $.get('./latestChanges.txt', function(data) {
-    alert(data);
     log = data.replace(/(?:\r\n|\r|\n)/g, '<br />');
-    alert(log);
     element2.innerHTML = log;
   }, 'text');
-  
 }
 
-function datalol(reponse)
-{
-  alert(response)
+function thanks() {
+  setTimeout(function () {
+      document.location.pathname = "WinHue3/download.html";
+  }, 5000);
 }
