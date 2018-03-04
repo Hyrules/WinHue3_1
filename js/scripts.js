@@ -24,6 +24,9 @@ $(document).ready(function() {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
   convertToMB();
+  var log = {{ site.github.releases[0].body }};
+  log.replace(/\\r\\n/g, "<br />");
+  alert(log);
 });
 
 function convertToMB(){
@@ -48,4 +51,4 @@ function datalol(reponse)
   alert(response)
 }
 
-//{{ site.github.releases[0].body }}
+//
