@@ -1,0 +1,4 @@
+---
+#Blank markdown so Jekyll updates the below site variable with latest release date
+---
+{{ site.github.releases[0].published_at }}

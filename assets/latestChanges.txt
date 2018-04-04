@@ -1,4 +1,8 @@
 ---
 #Blank markdown so Jekyll updates the below site variable with latest release changelog
 ---
+<<<<<<< HEAD
 {{ site.github.releases[0].body }}
+=======
+{{ site.github.releases[0].body }}
+>>>>>>> upstream/gh-pages
